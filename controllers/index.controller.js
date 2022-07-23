@@ -13,4 +13,11 @@ module.exports = {
       name,
     });
   },
+  profile: async (req, res) => {
+    const name = 'Doe';
+
+    return res.render('profile', {
+      name,
+    });
+  },
 };
