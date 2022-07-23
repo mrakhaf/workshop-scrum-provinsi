@@ -5,6 +5,7 @@ const auth = require('../middlewares/auth');
 const router = require('express').Router();
 
 router.get('/', indexController.index);
+router.get('/adat', indexController.adat);
 
 router.get('/posts', postController.index);
 router.get('/posts/create', postController.create);

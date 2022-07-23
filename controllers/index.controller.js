@@ -6,4 +6,11 @@ module.exports = {
       name,
     });
   },
+  adat: async (req, res) => {
+    const name = 'Doe';
+
+    return res.render('adat', {
+      name,
+    });
+  },
 };
