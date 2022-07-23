@@ -7,6 +7,7 @@ const router = require('express').Router();
 router.get('/', indexController.index);
 router.get('/adat', indexController.adat);
 router.get('/profile', indexController.profile);
+router.get('/place', indexController.places);
 
 router.get('/posts', postController.index);
 router.get('/posts/create', postController.create);

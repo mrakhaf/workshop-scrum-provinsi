@@ -20,4 +20,11 @@ module.exports = {
       name,
     });
   },
+  places: async (req, res) => {
+    const name = 'Places';
+
+    return res.render('places', {
+      name,
+    });
+  },
 };
