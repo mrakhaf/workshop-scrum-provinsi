@@ -27,4 +27,18 @@ module.exports = {
       name,
     });
   },
+  culture: async (req, res) => {
+    const name = 'Doe';
+
+    return res.render('culture', {
+      name,
+    });
+  },
+  profil: async (req, res) => {
+    const name = 'Places';
+
+    return res.render('profil', {
+      name,
+    });
+  },
 };
