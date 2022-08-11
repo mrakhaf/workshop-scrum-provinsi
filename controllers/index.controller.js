@@ -13,10 +13,10 @@ module.exports = {
       name,
     });
   },
-  profile: async (req, res) => {
+  gallery: async (req, res) => {
     const name = 'Doe';
 
-    return res.render('profile', {
+    return res.render('gallery', {
       name,
     });
   },
@@ -38,6 +38,13 @@ module.exports = {
     const name = 'Places';
 
     return res.render('profil', {
+      name,
+    });
+  },
+  culinary: async (req, res) => {
+    const name = 'Culinary';
+
+    return res.render('culinary', {
       name,
     });
   },

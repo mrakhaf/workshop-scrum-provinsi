@@ -6,10 +6,11 @@ const router = require('express').Router();
 
 router.get('/', indexController.index);
 router.get('/adat', indexController.adat);
-router.get('/profile', indexController.profile);
+router.get('/gallery', indexController.gallery);
 router.get('/place', indexController.places);
 router.get('/profil', indexController.profil);
 router.get('/culture', indexController.culture);
+router.get('/culinary', indexController.culinary);
 router.get('/posts', postController.index);
 router.get('/posts/create', postController.create);
 router.post('/posts/store', postController.store);
