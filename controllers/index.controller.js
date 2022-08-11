@@ -6,31 +6,31 @@ module.exports = {
       name,
     });
   },
-  adat: async (req, res) => {
+  rumahadat: async (req, res) => {
     const name = 'Doe';
 
-    return res.render('adat', {
+    return res.render('rumahadat', {
       name,
     });
   },
-  gallery: async (req, res) => {
+  galeri: async (req, res) => {
     const name = 'Doe';
 
-    return res.render('gallery', {
+    return res.render('galeri', {
       name,
     });
   },
-  places: async (req, res) => {
-    const name = 'Places';
+  tempat: async (req, res) => {
+    const name = 'Tempat yang wajib dikunjungi';
 
-    return res.render('places', {
+    return res.render('tempat', {
       name,
     });
   },
-  culture: async (req, res) => {
+  budaya: async (req, res) => {
     const name = 'Doe';
 
-    return res.render('culture', {
+    return res.render('budaya', {
       name,
     });
   },
@@ -41,10 +41,10 @@ module.exports = {
       name,
     });
   },
-  culinary: async (req, res) => {
-    const name = 'Culinary';
+  kuliner: async (req, res) => {
+    const name = 'Kuliner';
 
-    return res.render('culinary', {
+    return res.render('kuliner', {
       name,
     });
   },

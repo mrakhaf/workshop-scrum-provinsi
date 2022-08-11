@@ -5,12 +5,12 @@ const auth = require('../middlewares/auth');
 const router = require('express').Router();
 
 router.get('/', indexController.index);
-router.get('/adat', indexController.adat);
-router.get('/gallery', indexController.gallery);
-router.get('/place', indexController.places);
+router.get('/rumahadat', indexController.rumahadat);
+router.get('/galeri', indexController.galeri);
+router.get('/tempat', indexController.tempat);
 router.get('/profil', indexController.profil);
-router.get('/culture', indexController.culture);
-router.get('/culinary', indexController.culinary);
+router.get('/budaya', indexController.budaya);
+router.get('/kuliner', indexController.kuliner);
 router.get('/posts', postController.index);
 router.get('/posts/create', postController.create);
 router.post('/posts/store', postController.store);
