@@ -7,14 +7,11 @@ const User = db.define('User', {
     autoIncrement: true,
     primaryKey: true,
   },
-  name: DataTypes.STRING(80),
-  email: {
+  nama: DataTypes.STRING(80),
+  jeniskelamin: DataTypes.ENUM('pria', 'wanita'),
+  username: {
     type: DataTypes.STRING(255),
-    unique: true,
-  },
-  image: {
-    type: DataTypes.STRING(255),
-    allowNull: true,
+    // unique: true,
   },
   password: {
     type: DataTypes.STRING(255),

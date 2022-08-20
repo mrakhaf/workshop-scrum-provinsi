@@ -1,0 +1,80 @@
+<%- include('../includes/header.ejs'); %>
+<div class="container">
+  <% if(typeof message != "undefined" && message) { %>
+  <div class="mt-5 mb-3">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong><%= message %></strong>
+    </div>
+  </div>
+
+  <% } %>
+  <form
+    style="max-width: 400px; margin: 0 auto"
+    action="/register/store"
+    method="POST"
+  >
+    <h3>Register</h3>
+    <!-- Email input -->
+    <div class="form-outline my-4">
+      <input type="text" id="form2Example1" class="form-control" name="nama" />
+      <label class="form-label" for="form2Example1" name="nama">Nama</label>
+    </div>
+
+    <!-- jenis kelamin -->
+    <div class="row px-3">
+      <div class="col-2 form-check">
+        <input
+          type="radio"
+          class="form-check-input"
+          id="radio1"
+          name="jeniskelamin"
+          value="Pria"
+          checked
+        />Pria
+        <label class="form-check-label" for="radio1"></label>
+      </div>
+      <div class="col-2 form-check">
+        <input
+          type="radio"
+          class="form-check-input"
+          id="radio2"
+          name="jeniskelamin"
+          value="Wanita"
+        />Wanita
+        <label class="form-check-label" for="radio2"></label>
+      </div>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input
+        type="text"
+        id="form2Example2"
+        class="form-control"
+        name="username"
+      />
+      <label class="form-label" for="form2Example2">Username</label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input
+        type="password"
+        id="form2Example2"
+        class="form-control"
+        name="password"
+        minlength="7"
+      />
+      <label class="form-label" for="form2Example2" id="password"
+        >Password</label
+      >
+    </div>
+
+    <p>Sudah punya akun? <a href="#">Login</a></p>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">
+      Register
+    </button>
+  </form>
+</div>
+<%- include('../includes/footer'); %>

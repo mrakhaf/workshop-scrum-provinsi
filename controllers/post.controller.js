@@ -16,7 +16,7 @@ module.exports = {
   store: async (req, res) => {
     await Post.create({
       title: req.body.title,
-      content: req.body.content,
+      content: req.body.content, 
     });
 
     return res.redirect('/posts');

@@ -44,7 +44,7 @@ module.exports = {
   kuliner: async (req, res) => {
     const name = 'Kuliner';
 
-    return res.render('kuliner', {
+    return res.render('budaya/kuliner', {
       name,
     });
   },
