@@ -19,5 +19,7 @@ router.get('/posts/edit/:id', postController.edit);
 router.post('/posts/update/:id', postController.update);
 router.post('/posts/delete/:id', postController.destroy);
 router.get('/register', authController.index);
-router.post('/register/store', authController.register);
+router.post('/auth/register', authController.register);
+router.get('/login', authController.login);
+router.post('/auth/login', authController.loginProcess);
 module.exports = router;

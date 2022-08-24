@@ -10,40 +10,10 @@
   <% } %>
   <form
     style="max-width: 400px; margin: 0 auto"
-    action="/auth/register"
+    action="/auth/login"
     method="POST"
   >
-    <h3>Register</h3>
-    <!-- Email input -->
-    <div class="form-outline my-4">
-      <input type="text" id="form2Example1" class="form-control" name="nama" />
-      <label class="form-label" for="form2Example1" name="nama">Nama</label>
-    </div>
-
-    <!-- jenis kelamin -->
-    <div class="row px-3">
-      <div class="col-2 form-check">
-        <input
-          type="radio"
-          class="form-check-input"
-          id="radio1"
-          name="jeniskelamin"
-          value="Pria"
-          checked
-        />Pria
-        <label class="form-check-label" for="radio1"></label>
-      </div>
-      <div class="col-2 form-check">
-        <input
-          type="radio"
-          class="form-check-input"
-          id="radio2"
-          name="jeniskelamin"
-          value="Wanita"
-        />Wanita
-        <label class="form-check-label" for="radio2"></label>
-      </div>
-    </div>
+    <h3>Login</h3>
 
     <div class="form-outline mb-4">
       <input
@@ -69,11 +39,11 @@
       >
     </div>
 
-    <p>Sudah punya akun? <a href="/login">Login</a></p>
+    <p>Belum punya akun? <a href="/register">Register</a></p>
 
     <!-- Submit button -->
     <button type="submit" class="btn btn-primary btn-block mb-4">
-      Register
+      Login
     </button>
   </form>
 </div>
